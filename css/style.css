@@ -1,0 +1,278 @@
+@import url('form.css');
+@import url('footer.css');
+@import url('fullscreen.css');
+@-ms-viewport{
+  width: device-width;
+}
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+/* the main div for all items  */
+#container {
+  background-color: rgb(242, 242, 242);
+  padding: 0% 10% 0% 10%;
+
+}
+/* style of ul for links */
+header nav ul{
+  display: flex;
+  list-style: none;
+  text-align: left;
+  text-indent: 0px;
+  margin-top: 14px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 15.3px;
+  font-family: sans-serif;
+  width: 10%;
+  border-left:1px solid white;
+  outline: 0;
+  -moz-outline-style: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+}
+header a:hover{
+  background-color: rgb(255, 255, 255, 1);
+  color:rgb(199, 17, 65);
+  font-weight: 500;
+}
+
+header a:active {
+  box-shadow: 1px 1px 7px #222;
+}
+
+header a:focus {
+  background-color: rgb(255, 255, 255, 1);
+  color:rgb(199, 17, 65);
+}
+/* background and div style for the navigation bar */
+#topLinks{
+  background-color: rgb(199, 17, 65);
+  height: 50px;
+  width: auto;
+}
+#topLinks #logoImg {
+  float: left;
+}
+#topLinks nav{
+  float: right;
+}
+
+
+
+
+/* defining grid area for socialLinks */
+#sociallogos {
+  display: grid;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  grid-column-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 140px;
+  grid-template-areas:
+    "share share share share share share share share"
+    "fb pt tw in fk gl tm ad    "
+    ;
+
+}
+
+/* defining grid area names for each sociallogos */
+/* size of div for sociallinks  */
+#sociallogos div {
+  margin-top: 20%;
+  height: 110px;
+  width: auto;
+}
+.bgLogos {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+#sociallogos #share {
+  grid-area: share;
+  text-align: center;
+}
+#share img {
+  align-self: center;
+}
+
+#share p {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(209, 61, 14);
+}
+
+#sociallogos #fb{
+  grid-area: fb;
+  background-image: url(../image/fb.png);
+}
+#sociallogos #in{
+  grid-area: in;
+  background-image: url(..//image/ins.jpg);
+}
+
+#sociallogos #tw{
+  grid-area: tw;
+  background-image: url(../image/twitter.png);
+}
+#sociallogos #tm{
+  grid-area: tm;
+  background-image: url(../image/tm.png);
+}
+
+#sociallogos #ad{
+  grid-area: ad;
+  background-image: url(../image/ad.jpg);
+}
+
+
+#sociallogos #gl{
+  grid-area: gl;
+  background-image: url(../image/gl.png);
+}
+
+#sociallogos #pt{
+  grid-area: pt;
+  background-image: url(../image/pt.png);
+}
+
+#sociallogos #fk{
+  grid-area: fk;
+  background-image: url(../image/fk.png);
+}
+
+
+
+
+
+
+/* main info section style */
+#info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 20%  20%;
+  grid-template-areas:
+    "firstInfo"
+    "secInfo"
+    "thrInfo"
+    "footer";
+}
+
+.infoStyle {
+    padding: 10px;
+    justify-self: center;
+    align-self: start;
+    text-align: justify;
+}
+
+/* first info or post faster section style with grid style*/
+#firstInfo{
+  grid-area: firstInfo;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10%;
+  grid-template-areas:
+    "firstInfotext firstInfoImage";
+  background-color: white;
+}
+
+#firstInfoImg {
+  grid-area: firstInfoImage;
+}
+
+#firstInfo #txt {
+  grid-area: firstInfotext;
+  padding: 0px 10px 10px 15px;
+}
+
+/* secinfo section  with grid style*/
+#secInfo {
+  background-color:rgb(200, 205, 206);
+  grid-area: secInfo;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "secInfoImage secInfoText";
+}
+
+#secInfoImage {
+  place-self: center stretch;
+}
+
+#secInfoText{
+  align-self: center;
+}
+
+/* third info codes for three divs what when where*/
+#thrInfo{
+  grid-area: thrInfo;
+  background-color: rgb(39, 47, 61);
+  box-shadow:  inset 0 0 900px #ffffff;
+}
+
+/* third info section with three box what where when */
+#thrInfo div {
+  width: 28%;
+  margin: 25px 10px 25px 37px;
+  float: left;
+  background-color: white;
+  height: 450px;
+  box-shadow: 0 0px 0px rgba(186, 186, 186, 0.5);
+  border-radius: 40px;
+}
+
+#thrInfo p {
+  padding: 0px 10px;
+  text-align: center;
+}
+
+#thrInfo h3 {
+  text-align: center;
+  text-shadow: 2px 4px 20px rgb(139, 139, 139);
+  padding: 16px 13px 13px 13px;
+  margin: 0px 0px 5px 0px;
+}
+
+#what {
+  overflow: hidden;
+}
+
+#when {
+  overflow: hidden;
+}
+
+#where {
+  overflow: hidden;
+}
+
+#noFloat {
+  clear: both;
+}
+
+
+@media screen and (max-width: 375px) {
+
+
+}

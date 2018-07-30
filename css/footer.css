@@ -1,0 +1,166 @@
+@import url('style.css');
+@import url('form.css');
+@import url('fullscreen.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+/* rounded shapes are ended here */
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "navs contact socialmedia" "Slinks Slinks Slinks";
+    background-color: #232323;
+    letter-spacing: 0.4px;
+    line-height: 1.3;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+}
+
+footer ul {
+    padding-left: 25%;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+footer ul li {
+    margin-top: 25px;
+}
+
+footer ul a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#navs {
+    grid-area: navs;
+}
+
+footer a:hover {
+    color: rgb(193, 193, 193);
+    text-decoration: underline;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#socialmedia {
+    grid-area: socialmedia;
+}
+
+#copyright {
+    background-color: rgb(50, 50, 59);
+    margin-top: -18px;
+    height: 30px;
+    color: rgb(175, 175, 175);
+    text-align: center;
+}
+
+#copyright p {
+    padding: 5px}
+
+/* all social links with round shape */
+.socialContainer {
+    grid-area: Slinks;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.socialContainer h3 {
+    margin: 0px auto 0px auto;
+    color: rgb(187, 187, 187);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.effect {
+    width: 100%;
+    padding: 0px auto 0px auto;
+    color: white;
+}
+
+.effect .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.effect a {
+    text-decoration: none !important;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 2px solid #212121;
+}
+
+.effect a:hover {
+    color: #fff;
+}
+
+.effect a i {
+    position: relative;
+    z-index: 3;
+}
+
+.effect a: last-child {
+    margin-right: 0px;
+}
+
+.effect a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.effect a i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* rounded effect */
+.effect.rounded a {
+    border: none;
+    overflow: visible;
+}
+
+.effect.rounded a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s linear 0s;
+}
+
+.effect.rounded a:hover:after {
+    height: 0px;
+    top: 100%;
+}
