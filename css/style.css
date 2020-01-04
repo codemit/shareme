@@ -97,7 +97,8 @@ header a:focus {
 /* defining grid area names for each sociallogos */
 /* size of div for sociallinks  */
 #sociallogos div {
-  margin-top: 10%;
+  margin-top: 20%;
+	margin-bottom: 20%;
   height: 110px;
   width: auto;
 }
